@@ -20,7 +20,7 @@ body {
 /* Header */
 
 .header {
-    padding-top: 46px;
+    /* padding-top: 46px; */
     background-color: #F1F1F1;
 
 }
@@ -35,7 +35,10 @@ body {
 
 .logo {
     position: relative;
-    padding: 0 12px 3px 0;
+    top: 40px;
+    padding: 0 125px 3px 0;
+    padding-left: 3px;
+    /* padding: 0 12px 3px 0; */
 
     /* font-weight: 700;
     font-size: 32px;
@@ -92,6 +95,11 @@ body {
 
 .header-heading {
     margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.header-heading span {
     font-weight: 600;
     font-size: 44px;
 }
