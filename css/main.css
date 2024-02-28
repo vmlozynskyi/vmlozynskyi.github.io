@@ -8,7 +8,7 @@ body {
 
 .container {
     max-width: 1230px;
-    padding: 0 30px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -30,7 +30,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
 
-    margin-bottom: 47px;
+    /* margin-bottom: 47px; */
 }
 
 .logo {
@@ -38,6 +38,8 @@ body {
     top: 35px;
     padding: 0 125px 3px 0;
     padding-left: 3px;
+
+
     /* padding: 0 12px 3px 0; */
 
     /* font-weight: 700;
@@ -71,8 +73,22 @@ body {
     padding-left: 115vh;
 }
 
-.nav-button {
-    display: none;
+.hr-circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 115px;
+    padding: 0 1154px 3px 0;
+    padding-left: 2,5px;
+    
+	/* height: 0; */
+	border: none;
+	border-width: 0 0 5px;
+	border-style: solid;
+	/* border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 1" width="8" height="4"><circle fill="orange" cx="1" cy="0.5" r="0.5"></circle></svg>') 0 0 100% repeat; */
+	background-position: 50%;
+	/* box-sizing: border-box; */
+	color: orange;
 }
 
 .nav-link {
@@ -156,13 +172,6 @@ body {
     transform: translate3d(85px,0,0);
     }
 }
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-    .waves {
-    height:120px;
-    min-height:40px;
-}
-}
 
 /* Service */
 .services {
@@ -179,6 +188,7 @@ body {
 
 
 .services-row {
+    
     display: flex;
     column-gap: 30px;
     row-gap: 60px;
@@ -187,7 +197,7 @@ body {
 
 .service-card {
     flex: 1 1 0;
-    min-width: 315px;
+    min-width: 290px;
 }
 
 .service-card-img {
@@ -257,7 +267,7 @@ body {
 
 .contacts-content {
     margin: 0 auto 40px;
-    min-width: 200px;
+    min-width: 180px;
     font-size: 18px;
     text-align: center;
 }
@@ -272,7 +282,7 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 7px 22px;
+    padding: 7px 10px;
     background-color: #070707;
     border-radius: 30px;
 
@@ -280,6 +290,10 @@ body {
     color: #fff;
 
     transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.nav-button {
+    display: none;
 }
 
 .btn:hover, .btn:focus {
@@ -303,3 +317,54 @@ body {
 .contacts-footer {
     color: #828282
 }
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        padding-top: 30px;
+        height:90px;
+        min-height:40px;
+    }
+    .logo {
+        position: absolute;
+        top: 35px;
+        padding: 0 185px 3px 0;
+        padding-left: 3px;
+    }
+
+    .hr-circle {
+        top: 88px;
+        padding: 0 0 0 0;
+    }
+
+    .contacts-content {
+        min-width: 200px;
+    }
+    body {
+        /* max-width: 200px; */
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+       width: 100%;
+     }
+     .sec-1 {
+        background-size: cover;
+     }
+     .sec-2 {
+         margin-left: 40%;
+     }
+     .sec-1 .center {
+         margin-left: -140px;
+         left: 50%;
+     }
+     .item-2 {
+         margin: 0 auto;
+     }
+ }
