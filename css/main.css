@@ -30,12 +30,12 @@ body {
     justify-content: space-between;
     align-items: flex-end;
 
-    margin-bottom: 76px;
+    margin-bottom: 47px;
 }
 
 .logo {
-    position: relative;
-    top: 40px;
+    position: absolute;
+    top: 35px;
     padding: 0 125px 3px 0;
     padding-left: 3px;
     /* padding: 0 12px 3px 0; */
@@ -46,7 +46,7 @@ body {
     color: #000; */
 }
 
-.logo::after {
+/* .logo::after {
     right: 0;
     bottom: 0;
     position: absolute;
@@ -56,16 +56,19 @@ body {
     height: 8px;
     background-color: #FDA300;
     border-radius: 50%;
-}
+} */
 
 /* Nav */
 
 .nav-list {
+    position: absolute;
     display: flex;
+    top: 80px;
     column-gap: 50px;
     column-gap: 50px;    
     font-weight: 500;
     font-size: 14px;
+    padding-left: 115vh;
 }
 
 .nav-button {
@@ -108,11 +111,72 @@ body {
     line-height: 2;
 }
 
-/* Service */
-
-.services {
-    padding: 90px 0;
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:120px;
+    max-height:150px;
 }
+
+.content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: rgb(255, 255, 255);
+}
+
+  /* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+    transform: translate3d(-90px,0,0);
+    }
+    100% { 
+    transform: translate3d(85px,0,0);
+    }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+    height:120px;
+    min-height:40px;
+}
+}
+
+/* Service */
+.services {
+    position:relative;
+    padding-left: 50px;
+}
+
+.container1 {
+    
+    padding: 90px 0;
+    
+}
+
+
 
 .services-row {
     display: flex;
