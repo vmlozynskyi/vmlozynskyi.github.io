@@ -320,6 +320,9 @@ body {
 
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
     .waves {
         padding-top: 30px;
         height:90px;
@@ -347,24 +350,5 @@ body {
         top: 0;
         left: 0;
         right: 0;
-    }
-}
-
-@media (max-width: 576px) {
-   .wrapper {
-      width: 100%;
-    }
-    .sec-1 {
-       background-size: cover;
-    }
-    .sec-2 {
-        margin-left: 40%;
-    }
-    .sec-1 .center {
-        margin-left: -140px;
-        left: 50%;
-    }
-    .item-2 {
-        margin: 0 auto;
     }
 }
