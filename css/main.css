@@ -12,6 +12,10 @@ body {
     margin: 0 0;
 }
 
+.container2 {
+    margin: 0 0;
+}
+
 .title-1 {
     font-size: 34px;
     font-weight: 600;
@@ -46,6 +50,13 @@ body {
     font-size: 32px;
     line-height: 1;
     color: #000; */
+}
+
+.homehref {
+    position: absolute;
+    width: 22vh;
+    height: 15vh;
+    z-index: 1;
 }
 
 /* .logo::after {
@@ -281,7 +292,7 @@ body {
 }
 
 .contacts {
-    padding: 90px 0;
+    /* padding: 90px 0; */
     text-align: center;
 }
 
@@ -342,4 +353,12 @@ body {
 
 .contacts-footer {
     color: #828282
+}
+
+#contacts {
+    background-color: #dfdfdf;
+}
+
+#footer-wave {
+
 }
