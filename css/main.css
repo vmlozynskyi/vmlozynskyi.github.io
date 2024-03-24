@@ -197,7 +197,7 @@ body {
     }
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .wrapper {
        width: 100%;
      }
@@ -214,7 +214,7 @@ body {
      .item-2 {
          margin: 0 auto;
      }
- }
+ } */
 
 /* Service */
 .services {
