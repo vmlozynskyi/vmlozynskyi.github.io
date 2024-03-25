@@ -90,7 +90,7 @@ body {
     right: 0;
     padding: 0 1154px 0 0; 
 	border: none;
-	border-width: 0 0 5px;
+	border-width: 1 1 5px;
 	border-style: solid;
 	background-position: 50%;
 	color: orange;
@@ -186,7 +186,7 @@ body {
     }
     .logo {
         position: absolute;
-        top: 35px;
+        top: 25px;
         padding: 0 185px 3px 0;
         padding-left: 3px;
     }
@@ -218,20 +218,18 @@ body {
 
 /* Service */
 .services {
-    position:relative;
+    position: relative;
     padding-left: 50px;
+    min-height: 100%;
 }
 
 .container1 {
-    
     padding: 90px 0;
-    
 }
 
 
 
 .services-row {
-    
     display: flex;
     column-gap: 30px;
     row-gap: 60px;
