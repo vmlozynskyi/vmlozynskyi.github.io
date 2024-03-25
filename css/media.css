@@ -72,13 +72,14 @@
 }
 
 @media (max-width: 768px) {
-    html, body {width:100%; overflow-x:hidden}
+    html {width:100%; overflow-x:hidden}
 
     .waves {
         padding-top: 30px;
         height:90px;
         min-height:40px;
     }
+
     .logo {
         position: absolute;
         top: 25px;
@@ -116,12 +117,9 @@
         margin-top: 55px;
     }
 
-    .contacts {
-        /* padding: 60px 0; */
-    }
-
     .contacts-title {
         margin-bottom: 20px;
+        padding: 60px 0;
     }
 
     .contacts-content {
